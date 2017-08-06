@@ -1,4 +1,4 @@
-## This program stores inverse of a matrix into a cache so that it does not need to be
+<## This program stores inverse of a matrix into a cache so that it does not need to be
 ## stored again and again and can be retrieved when needed.
 
 
@@ -18,7 +18,7 @@ makeCacheMatrix <- function(x = matrix()) {
   get <- function() x
   
   ## setInv function helps to set the value of inverseMatrix so that it can be stored in Cache
-  setInv <- function(InvMatrix) InverseMatrix <- InvMatrix
+  setInv <- function(InvMatrix) InverseMatrix <<- InvMatrix
   
   ## getInv helps to retrieve the value stored in cache
   getInv <- function() InverseMatrix
